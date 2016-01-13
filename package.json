@@ -40,12 +40,8 @@
   "name": "html5-boilerplate",
   "private": true,
   "scripts": {
-    "build": "gulp build",
-    "test": "gulp archive && mocha --reporter spec --timeout 5000",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "lite": "lite-server",
-      "start": "node index.js"
+      "start": "node index.js",
+      "postinstall": "bower install"
 
   },
   "version": "5.2.0"
