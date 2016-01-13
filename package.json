@@ -32,7 +32,7 @@
     "typescript": "^1.7.3"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": "0.10.x"
   },
   "h5bp-configs": {
     "directories": {
