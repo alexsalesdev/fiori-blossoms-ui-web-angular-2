@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Fiori-Blossoms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Flat UI -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.2.2/css/flat-ui.min.css" rel="stylesheet"/>
+    <link href="css/responsive-gallery.css" rel="stylesheet"/>
+    <link href="css/menu.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.css" rel="stylesheet"/>
+
+    <style type="text/css">
+        .container {
+            margin: 0px 2%;
+        }
+
+        .bxslider li img {
+            margin: 0px auto;
+        }
+    </style>
+</head>
+<body class="no-touch">
+<header id="main-header" class="container">
+    <h1>header</h1>
+    <nav class="menu">
+        <ul class="active">
+            <li class="current-item"><a href="#">Home</a></li>
+            <li><a href="#">My Work</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Get in Touch</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+
+            <a class="toggle-nav" href="#">&#9776;</a>
+    </nav>
+</header>
+
+<section class="container">
+    <div id="bx-wrapper">
+        <ul class="bxslider">
+            <li><img src="http://cdn1.buuteeq.com/upload/27919/_derekford_obmgrapidstour1409055749media.jpg.800x400_default.jpg" /></li>
+            <li><img src="http://www.sleepzone.ie/uploads/images/PanelImages800x400/TheBurren/General/sleepzone_hostels_burren_800x400_14.jpg" /></li>
+            <li><img src="http://cdn1.buuteeq.com/upload/18138/atacama-shutterstock_190362998-1.jpg.800x400_default.jpg" /></li>
+            <li><img src="http://cdn1.buuteeq.com/upload/18229/andbeyond-mnemba-island-18.jpg.800x400_default.jpg" /></li>
+        </ul>
+    </div>
+
+    <h2>section</h2>
+
+    <div class="wrap container">
+        <!-- Define all of the tiles: -->
+        <div class="box">
+            <div class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/7.jpg" />
+                <div class="titleBox">Butterfly</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/1.jpg" />
+                <div class="titleBox">An old greenhouse</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/2.jpg" />
+                <div class="titleBox">Purple wildflowers</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/3.jpg" />
+                <div class="titleBox">A birdfeeder</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/10.jpg" />
+                <div class="titleBox">Crocus close-up</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/4.jpg" />
+                <div class="titleBox">The garden shop</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/5.jpg" />
+                <div class="titleBox">Spring daffodils</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/6.jpg" />
+                <div class="titleBox">Iris along the path</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/8.jpg" />
+                <div class="titleBox">The garden blueprint</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/9.jpg" />
+                <div class="titleBox">The patio</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/11.jpg" />
+                <div class="titleBox">Bumble bee collecting nectar</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/12.jpg" />
+                <div class="titleBox">Winding garden path</div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /#wrap -->
+</section>
+<footer class="container"><h3>footer</h3></footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.toggle-nav').click(function (e) {
+            $(this).toggleClass('active');
+            $('.menu ul').toggleClass('active');
+            e.preventDefault();
+        });
+        $('.bxslider').bxSlider({
+            auto: true
+        });
+
+            // Set the correct [touchscreen] body class
+            $('body').removeClass('no-touch').addClass('touch');
+
+            // Add the touch toggle to show text when tapped
+            $('div.boxInner img').click(function(){
+                $(this).closest('.boxInner').toggleClass('touchFocus');
+            });
+    });
+
+</script>
+
+<!-- Enable media queries for old IE -->
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</body>
+</html>
