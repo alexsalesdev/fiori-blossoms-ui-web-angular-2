@@ -18,7 +18,7 @@ System.register(['angular2/core'], function(exports_1) {
         execute: function() {
             Config = (function () {
                 function Config() {
-                    this.SERVER_URL = "http://localhost:9000/";
+                    this.SERVER_URL = "http://128.199.158.79:9000/";
                 }
                 Config = __decorate([
                     core_1.Injectable(), 
