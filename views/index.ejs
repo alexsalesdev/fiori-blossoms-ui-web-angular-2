@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Fiori-Blossoms</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type='text/javascript' src='//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js' data-shr-siteid='9a89ffa141e40d427d6379dd5d2d32ec' data-cfasync='false' async='async'></script>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+</head>
+<!-- 3. Display the application -->
+<body class="no-touch">
+<my-app>Loading...</my-app>
+
+
+
+<!-- 1. Load libraries -->
+<script src="../node_modules/angular2/bundles/angular2-polyfills.js"></script>
+<script src="../node_modules/systemjs/dist/system.src.js"></script>
+<script src="../node_modules/rxjs/bundles/Rx.js"></script>
+<script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+<script src="https://code.angularjs.org/2.0.0-beta.0/http.dev.js"></script>
+<script src="https://code.angularjs.org/2.0.0-beta.0/router.dev.js"></script>
+<!-- 2. Configure SystemJS -->
+<script>
+    System.config({
+        packages: {
+            app: {
+                format: 'register',
+                defaultExtension: 'js'
+            }
+        }
+    });
+    System.import('app/boot')
+        .then(null, console.error.bind(console));
+</script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.js"></script>
+
+<!-- Enable media queries for old IE -->
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</body>
+</html>
