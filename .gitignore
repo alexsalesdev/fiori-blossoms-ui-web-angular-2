@@ -47,7 +47,6 @@ performance/temp*.html
 *.swp
 angular.js.tmproj
 /node_modules/
-bower_components/
 angular.xcodeproj
 .idea
 *.iml
