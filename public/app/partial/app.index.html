@@ -68,10 +68,10 @@
     <div style="text-align: center"><p>We have a variety of character bouquets from hello kitty to winnie the pooh, mickey mouse, minnie mouse, tiger, minions, just name it and we will make it.</p></div>
 
     <div class="wrap container">
-        <div class="box" *ngFor="#product of _productService.products">
-            <div class="boxInner">
+        <div class="box" *ngFor="#product of _productService.products" >
+            <div class="boxInner" itemscope itemtype="http://schema.org/Product">
                 <img src="{{ product.imageUrl }}" alt="{{product.title}}" onError="this.src='img/default_small.jpg';" />
-                <div class="titleBox" (click)="imageClicked(this);"><div>{{ product.title }}</div> <p>₱ {{ product.price }}</p></div>
+                <div class="titleBox" (click)="imageClicked(this);"><div itemprop="name">{{ product.title }}</div> <div itemprop="offers" itemscope itemtype="http://schema.org/Offer"><p itemprop="price">₱ {{ product.price }}</p></div></div>
             </div>
         </div>
         <div [hidden]="_productService.products.length">
